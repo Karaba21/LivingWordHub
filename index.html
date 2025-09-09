@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LivingWordHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Fijo -->
+    <header class="header-fixed">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1><i class="fas fa-cross"></i> LivingWordHub</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#verses" class="nav-link">Verses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#music" class="nav-link">Music</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#podcast" class="nav-link">Podcast</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#creators" class="nav-link">Creators</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#help" class="nav-link">Help</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección Home -->
+    <section id="home" class="section">
+        <div class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome to your <span class="highlight">Spiritual Refuge</span></h1>
+                <p class="hero-subtitle">A place where you will find peace, hope, and the strength to continue your journey of faith</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('verses')">Find Verses</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('music')">Listen to Music</button>
+                </div>
+            </div>
+            <div class="hero-decoration">
+                <div class="floating-cross">
+                    <i class="fas fa-cross"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="features">
+            <div class="container">
+                <h2 class="section-title">What will you find here?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3>Inspiring Verses</h3>
+                        <p>Words of hope and strength for every moment of your life</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <h3>Christian Music</h3>
+                        <p>Praise and worship through music that uplifts your spirit</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <h3>Inspiring Podcasts</h3>
+                        <p>Reflections and teachings that strengthen your faith</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Content Creators</h3>
+                        <p>Connect with people who share your faith and values</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Verses -->
+    <section id="verses" class="section">
+        <div class="container">
+            <h2 class="section-title">Daily Verses</h2>
+            <div class="verses-container">
+                <div class="verse-card featured">
+                    <div class="verse-content">
+                        <p class="verse-text">"For I know the thoughts that I think toward you, saith the Lord, thoughts of peace, and not of evil, to give you an expected end."</p>
+                        <p class="verse-reference">Jeremiah 29:11</p>
+                    </div>
+                </div>
+                
+                <div class="verses-grid">
+                    <div class="verse-card">
+                        <p class="verse-text">"I can do all things through Christ which strengtheneth me."</p>
+                        <p class="verse-reference">Philippians 4:13</p>
+                    </div>
+                    <div class="verse-card">
+                        <p class="verse-text">"Commit thy way unto the Lord; trust also in him; and he shall bring it to pass."</p>
+                        <p class="verse-reference">Psalms 37:5</p>
+                    </div>
+                    <div class="verse-card">
+                        <p class="verse-text">"For God so loved the world, that he gave his only begotten Son."</p>
+                        <p class="verse-reference">John 3:16</p>
+                    </div>
+                    <div class="verse-card">
+                        <p class="verse-text">"The Lord is my shepherd; I shall not want."</p>
+                        <p class="verse-reference">Psalms 23:1</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="verse-categories">
+                <h3>Verse Categories</h3>
+                <div class="category-buttons">
+                    <button class="category-btn active">Hope</button>
+                    <button class="category-btn">Strength</button>
+                    <button class="category-btn">Peace</button>
+                    <button class="category-btn">Love</button>
+                    <button class="category-btn">Faith</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Music -->
+    <section id="music" class="section">
+        <div class="container">
+            <h2 class="section-title">Christian Music</h2>
+            <div class="music-categories">
+                <div class="category-tabs">
+                    <button class="tab-btn active">Praise</button>
+                    <button class="tab-btn">Worship</button>
+                    <button class="tab-btn">Hymns</button>
+                    <button class="tab-btn">Contemporary</button>
+                </div>
+            </div>
+            
+            <div class="music-grid">
+                <div class="music-card">
+                    <div class="music-cover">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <div class="music-info">
+                        <h4>Amazing Grace</h4>
+                        <p>Classic Hymn</p>
+                        <div class="music-controls">
+                            <button class="play-btn"><i class="fas fa-play"></i></button>
+                            <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="music-card">
+                    <div class="music-cover">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <div class="music-info">
+                        <h4>How Great Thou Art</h4>
+                        <p>Worship</p>
+                        <div class="music-controls">
+                            <button class="play-btn"><i class="fas fa-play"></i></button>
+                            <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="music-card">
+                    <div class="music-cover">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <div class="music-info">
+                        <h4>Blessed Be Your Name</h4>
+                        <p>Contemporary</p>
+                        <div class="music-controls">
+                            <button class="play-btn"><i class="fas fa-play"></i></button>
+                            <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="music-card">
+                    <div class="music-cover">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <div class="music-info">
+                        <h4>Great Is Thy Faithfulness</h4>
+                        <p>Classic Hymn</p>
+                        <div class="music-controls">
+                            <button class="play-btn"><i class="fas fa-play"></i></button>
+                            <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Podcast -->
+    <section id="podcast" class="section">
+        <div class="container">
+            <h2 class="section-title">Inspiring Podcasts</h2>
+            <div class="podcast-grid">
+                <div class="podcast-card featured">
+                  <iframe data-testid="embed-iframe" style="border-radius:12px" 
+                  src="https://open.spotify.com/embed/show/6X8GCOmG1dH54RleBqm4up?utm_source=generator" 
+                  width="100%" height="352" frameBorder="0" allowfullscreen="" 
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                  loading="lazy">
+                  </iframe>
+                </div>
+                
+                <div class="podcast-card">
+                    <div class="podcast-image">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="podcast-content">
+                        <h3>Faith in Action</h3>
+                        <p>Stories of how faith transforms lives and communities</p>
+                        <div class="podcast-meta">
+                            <span class="duration"><i class="fas fa-clock"></i> 25 min</span>
+                            <span class="episode">Episode 32</span>
+                        </div>
+                        <button class="play-podcast-btn">
+                            <i class="fas fa-play"></i> Listen
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="podcast-card">
+                    <div class="podcast-image">
+                        <i class="fas fa-pray"></i>
+                    </div>
+                    <div class="podcast-content">
+                        <h3>Prayer and Meditation</h3>
+                        <p>Prayer guides and moments of silence to connect with God</p>
+                        <div class="podcast-meta">
+                            <span class="duration"><i class="fas fa-clock"></i> 20 min</span>
+                            <span class="episode">Episode 28</span>
+                        </div>
+                        <button class="play-podcast-btn">
+                            <i class="fas fa-play"></i> Listen
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Creators -->
+    <section id="creators" class="section">
+        <div class="container">
+            <h2 class="section-title">Christian Content Creators</h2>
+            <div class="creators-grid">
+                <div class="creator-card">
+                    <div class="creator-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="creator-info">
+                        <h3>Pastor Maria Gonzalez</h3>
+                        <p>Preacher and Speaker</p>
+                        <div class="creator-stats">
+                            <span><i class="fas fa-users"></i> 15K followers</span>
+                            <span><i class="fas fa-video"></i> 120 videos</span>
+                        </div>
+                        <div class="creator-links">
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="creator-card">
+                    <div class="creator-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="creator-info">
+                        <h3>Carlos Music</h3>
+                        <p>Christian Musician and Composer</p>
+                        <div class="creator-stats">
+                            <span><i class="fas fa-users"></i> 8K followers</span>
+                            <span><i class="fas fa-music"></i> 45 songs</span>
+                        </div>
+                        <div class="creator-links">
+                            <a href="#" class="social-link"><i class="fab fa-spotify"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="creator-card">
+                    <div class="creator-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="creator-info">
+                        <h3>Ana Reflections</h3>
+                        <p>Christian Writer and Blogger</p>
+                        <div class="creator-stats">
+                            <span><i class="fas fa-users"></i> 12K followers</span>
+                            <span><i class="fas fa-book"></i> 80 articles</span>
+                        </div>
+                        <div class="creator-links">
+                            <a href="#" class="social-link"><i class="fab fa-blog"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Help -->
+    <section id="help" class="section">
+        <div class="container">
+            <h2 class="section-title">Need Help?</h2>
+            <div class="help-content">
+                <div class="help-intro">
+                    <p>If you are going through a difficult time, remember that you are not alone. Here you will find resources and support to help you on your journey.</p>
+                </div>
+                
+                <div class="help-grid">
+                    <div class="help-card emergency">
+                        <div class="help-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Crisis Line</h3>
+                        <p>If you need to talk to someone right now</p>
+                        <button class="help-btn">Call Now</button>
+                    </div>
+                    
+                    <div class="help-card">
+                        <div class="help-icon">
+                            <i class="fas fa-praying-hands"></i>
+                        </div>
+                        <h3>Emergency Prayer</h3>
+                        <p>A special prayer for moments of crisis</p>
+                        <button class="help-btn">Read Prayer</button>
+                    </div>
+                    
+                    <div class="help-card">
+                        <div class="help-icon">
+                            <i class="fas fa-church"></i>
+                        </div>
+                        <h3>Find a Church</h3>
+                        <p>Connect with a faith community near you</p>
+                        <button class="help-btn">Search Church</button>
+                    </div>
+                    
+                    <div class="help-card">
+                        <div class="help-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Support Group</h3>
+                        <p>Join our online support community</p>
+                        <button class="help-btn">Join</button>
+                    </div>
+                </div>
+                
+                <div class="prayer-request">
+                    <h3>Prayer Request</h3>
+                    <p>Do you have a prayer request? Share it with us and our community will pray for you.</p>
+                    <form class="prayer-form">
+                        <textarea placeholder="Write your prayer request here..." rows="4"></textarea>
+                        <button type="submit" class="submit-prayer-btn">Send Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-cross"></i> LivingWordHub</h3>
+                    <p>Your spiritual refuge in times of need</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#verses">Verses</a></li>
+                        <li><a href="#music">Music</a></li>
+                        <li><a href="#help">Help</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> info@livingwordhub.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LivingWordHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
